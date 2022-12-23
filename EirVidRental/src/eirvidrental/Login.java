@@ -48,7 +48,7 @@ public class Login {
                 }
 
             }
-            if (found) {
+            if (found == false) {
                 System.out.println("Sorry, user not found. Do you want create an account\n");
 
                 MenuDisplayVerticalLogin menuV = new MenuDisplayVerticalLogin();
