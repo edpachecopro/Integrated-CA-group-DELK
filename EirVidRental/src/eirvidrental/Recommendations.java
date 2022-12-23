@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 /**
  *
- * @author lucas
+ * @author Lucas Albuquerque 2020343
  */
 public class Recommendations {
     

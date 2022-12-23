@@ -22,7 +22,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 /**
- * This class will will find the movie the user wants and rent it.
+ * This class will find the movie the user wants and rent it.
  * It will use the movie ID to find the movie in a list of movies.
  * 
  * @author Keith Fernandes 2020353

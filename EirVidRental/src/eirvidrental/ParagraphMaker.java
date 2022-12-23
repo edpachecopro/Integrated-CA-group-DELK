@@ -9,7 +9,7 @@ package eirvidrental;
  * It will break the overview line into smaller 10-word lines. It basically does
  * what it says, change a full line into a small paragraph and returns that.
  *
- * @author dacsa
+ * @author Douglas Santos 2020338
  */
 public class ParagraphMaker {
 
