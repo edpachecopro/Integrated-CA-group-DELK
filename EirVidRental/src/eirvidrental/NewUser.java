@@ -1,7 +1,6 @@
 
-package OAF;
+package eirvidrental;
 
-import eirvidtest.MainMenu;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;

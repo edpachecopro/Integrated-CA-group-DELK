@@ -1,7 +1,6 @@
-package eirvidtest;
+package eirvidrental;
 
 import MenuDisplays.MenuDisplayError;
-import OAF.NewUser;
 import MenuDisplays.MenuDisplayMainHeader;
 import MenuDisplays.MenuDisplayVerticalLogin;
 import MenuDisplays.MenuDisplayFarewellLogin;
