@@ -8,8 +8,11 @@ import java.util.Scanner;
 
 /**
  *
- * @author dacsa
+ * @author Edgard Pacheco
+ * Student ID 2020332
+ * 
  */
+
 public class LoginMenu {
 
     public void Login() {
