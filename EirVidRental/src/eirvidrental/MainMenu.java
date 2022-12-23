@@ -7,14 +7,15 @@ package eirvidrental;
 
 import MenuDisplays.MenuDisplayError;
 import MenuDisplays.MenuDisplayFarewellMain;
-import MenuDisplays.MenuDisplayHorizontal;
-import MenuDisplays.MenuDisplayMainHeader;
 import MenuDisplays.MenuDisplayVertical;
+import MenuDisplays.MenuDisplayMainHeader;
+import MenuDisplays.MenuDisplayHorizontal;
 import java.util.Scanner;
 
 /**
- * Main Menu of the program that will be calling all of the other specific classes.
- * 
+ * Main Menu of the program that will be calling all of the other specific
+ * classes.
+ *
  * @author Douglas Santos 2020338
  */
 public class MainMenu {
@@ -29,10 +30,10 @@ public class MainMenu {
         MenuDisplayMainHeader mainHeader = new MenuDisplayMainHeader();
         mainHeader.Menu();
         // Display the initial menu
-        MenuDisplayHorizontal main = new MenuDisplayHorizontal();
+        MenuDisplayVertical main = new MenuDisplayVertical();
         main.Menu();
-        // After that, it will display the main menu vertically
-        MenuDisplayVertical menuVertical = new MenuDisplayVertical();
+        // After that, it will display the main menu horizontally
+        MenuDisplayHorizontal menuVertical = new MenuDisplayHorizontal();
 
         //It only exits the program when the user types 5, which is the Exit option in the menu
         String choice = "";
@@ -54,7 +55,8 @@ public class MainMenu {
                     case "2":
                         //Option 2 Search Movie
                         //Call the SearchMovie class
-
+                        SearchMovie sm = new SearchMovie();
+                        sm.search();
                         //Brings the vertical menu
                         menuVertical.Menu();
                         break;
@@ -62,14 +64,15 @@ public class MainMenu {
                         //Option 3 Rent a movie
                         //Access the renting menu - DONE
                         RentMovie rm = new RentMovie();
-                        rm.rent(user);                        
+                        rm.rent(user);
                         //Brings the vertical menu
                         menuVertical.Menu();
                         break;
                     case "4":
                         //Option 4 History
                         //Access the rental history of the user if they have one
-
+                        RentalHistory history = new RentalHistory();
+                        history.showHistory(user);
                         //Brings the vertical menu
                         menuVertical.Menu();
                         break;

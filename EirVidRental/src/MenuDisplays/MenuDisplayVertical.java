@@ -8,7 +8,7 @@ package MenuDisplays;
 import Interfaces.MenuDisplayInterface;
 
 /**
- * It displays the main menu in vertical orientation.
+ * It displays the main menu in horizontal orientation.
  *
  * @author Douglas Santos 2020338
  */
@@ -16,7 +16,13 @@ public class MenuDisplayVertical implements MenuDisplayInterface {
 
     @Override
     public void Menu() {
-        System.out.println("\nMENU: 1. Recommendations | 2. Search | 3. Rent | 4. History | 5. Exit ");
+        System.out.println("Choose an option:");
+        System.out.println("1. Recommendations");
+        System.out.println("2. Movie search");
+        System.out.println("3. Rent a movie");
+        System.out.println("4. Your rental history");
+        System.out.println("5. Exit");
+        System.out.println("\n ----------------------------- \n ");
     }
 
 }

@@ -1,7 +1,7 @@
 package eirvidrental;
 
 import MenuDisplays.MenuDisplayError;
-import MenuDisplays.MenuDisplayVerticalLogin;
+import MenuDisplays.MenuDisplayHorizontalLogin;
 import MenuDisplays.MenuDisplayFarewellLogin;
 import java.io.File;
 import java.util.Scanner;
@@ -54,7 +54,7 @@ public class Login {
   
                 System.out.println("Sorry, user not found. Do you want create an account\n");
 
-                MenuDisplayVerticalLogin menuV = new MenuDisplayVerticalLogin();
+                MenuDisplayHorizontalLogin menuV = new MenuDisplayHorizontalLogin();
                 menuV.Menu();
                 System.out.println("⇣⇣");
                 Scanner input = new Scanner(System.in);

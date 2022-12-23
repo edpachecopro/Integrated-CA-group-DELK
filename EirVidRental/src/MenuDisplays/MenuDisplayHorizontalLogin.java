@@ -13,7 +13,7 @@ import Interfaces.MenuDisplayInterface;
  * 
  * @author Douglas Santos 2020338
  */
-public class MenuDisplayVerticalLogin implements MenuDisplayInterface {
+public class MenuDisplayHorizontalLogin implements MenuDisplayInterface {
 
     @Override
     public void Menu() {

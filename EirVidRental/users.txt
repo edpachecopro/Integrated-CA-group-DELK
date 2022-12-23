@@ -1,4 +1,4 @@
-Keith,kei@gmail.com
-Edgard,ed@gmail.com
-Douglas,doug@gmail.com
-Lucas,lu@gmail.com
+doug,doug@gmail.com
+keith,keith@gmail.com
+Ed,ed@gmail.com
+Lucas,luc@gmail.com

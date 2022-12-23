@@ -2,7 +2,7 @@ package eirvidrental;
 
 import MenuDisplays.MenuDisplayError;
 import MenuDisplays.MenuDisplayMainHeader;
-import MenuDisplays.MenuDisplayVerticalLogin;
+import MenuDisplays.MenuDisplayHorizontalLogin;
 import MenuDisplays.MenuDisplayFarewellLogin;
 import java.util.Scanner;
 
@@ -20,7 +20,7 @@ public class LoginMenu {
         // display menu with options to list movies or select one by id
         MenuDisplayMainHeader mainHeader = new MenuDisplayMainHeader();
         mainHeader.Menu();
-        MenuDisplayVerticalLogin menuLogin = new MenuDisplayVerticalLogin();
+        MenuDisplayHorizontalLogin menuLogin = new MenuDisplayHorizontalLogin();
         menuLogin.Menu();
 
         // prompt user to enter their choice
