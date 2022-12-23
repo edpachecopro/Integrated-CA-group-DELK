@@ -33,7 +33,7 @@ public class EirVidRental {
         instruction.Menu();
         //Wait for the user to enter something
         read.nextLine();
-    
+        //Method to call login here
 
     }
 }
