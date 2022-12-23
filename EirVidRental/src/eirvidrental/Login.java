@@ -8,8 +8,11 @@ import java.util.Scanner;
 
 /**
  *
- * @author edgardpacheco
+ * @author Edgard Pacheco
+ * Student ID 2020332
+ * 
  */
+
 public class Login {
 
     String file = "users.txt";
