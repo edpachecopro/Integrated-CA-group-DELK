@@ -45,6 +45,8 @@ public class MainMenu {
                 switch (choice) {
                     case "1":
                         //Option 1 Recommendations
+                        Recommendations recommended = new Recommendations();
+                        recommended.recommendations();
 
                         //Brings the vertical menu
                         menuVertical.Menu();
