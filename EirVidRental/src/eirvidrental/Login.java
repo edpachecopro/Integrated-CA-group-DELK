@@ -44,6 +44,7 @@ public class Login {
 
                 if (email.equals(userin)) {
                     found = true;
+                    checkUser.close();
 
                     System.out.println("\n☴☴☴ Welcome " + name.substring(0, 1)
                             .toUpperCase() + name.substring(1) + " ☴☴☴");
@@ -55,8 +56,9 @@ public class Login {
 
             }
   
-                System.out.println("Sorry, user not found. Do you want create an account\n");
-
+                System.out.println("Sorry, user not found. Do you want create an account?\n");
+                checkUser.close();
+                
                 MenuDisplayHorizontalLogin menuV = new MenuDisplayHorizontalLogin();
                 menuV.Menu();
                 System.out.println("⇣⇣");

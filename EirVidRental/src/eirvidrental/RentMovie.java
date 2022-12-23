@@ -67,7 +67,8 @@ public class RentMovie {
             String movieId = read.nextLine().toUpperCase();
             // Get the movie information from the movies map
             if (movieId.equalsIgnoreCase("q")) {
-
+                RandomSentence nay = new RandomSentence();
+                System.out.println(nay.getRandomWord());
                 break;
             }
 
@@ -123,6 +124,8 @@ public class RentMovie {
             rentedMovies.add(movie);
 
             System.out.println("\nSuccess! You rented your movie!");
+            RandomNiceWord yay = new RandomNiceWord();
+            System.out.println(yay.getRandomWord());
             // Write the updated rental history to the file
             try (PrintWriter writer = new PrintWriter(new FileWriter(historyFile))) {
                 writer.println("user,title,day of rental,times watched");
