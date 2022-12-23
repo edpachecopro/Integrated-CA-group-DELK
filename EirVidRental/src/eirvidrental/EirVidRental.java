@@ -34,7 +34,9 @@ public class EirVidRental {
         //Wait for the user to enter something
         read.nextLine();
         //Method to call login here
+
         LoginMenu callLogin = new LoginMenu();
         callLogin.Login();
-    }
+
+}
 }
