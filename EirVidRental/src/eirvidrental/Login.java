@@ -26,6 +26,9 @@ public class Login {
         Scanner sc = new Scanner(System.in);
         String userin = sc.nextLine(); // getting users input
 
+       MenuDisplayError error = new MenuDisplayError();
+       LoginMenu checkuser = new LoginMenu();
+          
         try {
 
             checkUser = new Scanner(new File(file)); // loading the file users.txt
@@ -48,7 +51,7 @@ public class Login {
                 }
 
             }
-            if (found == false) {
+  
                 System.out.println("Sorry, user not found. Do you want create an account\n");
 
                 MenuDisplayVerticalLogin menuV = new MenuDisplayVerticalLogin();
@@ -59,21 +62,28 @@ public class Login {
 
                 switch (choice) { // giving 2 option to if the users doesn't exist
                     case "1":
-                        NewUser newuser = new NewUser();
-                        newuser.newAccount();
+                        
+                        checkuser.Login();
+           
                         break;
                     case "2":
+                        NewUser newuser = new NewUser();
+                        newuser.newAccount();
+                        
+                      case "3":
                         MenuDisplayFarewellLogin farewell = new MenuDisplayFarewellLogin();
                         farewell.Menu();
                         System.exit(0);
-                    default:
-                        MenuDisplayError error = new MenuDisplayError();
-                        error.Menu();
-                        LoginMenu checkuser = new LoginMenu();
-                        checkuser.Login();
                         break;
+
+                    default:
+                        
+                    error.Menu();
+                    checkuser.Login();
+                    break;   
+                        
                 }
-            }
+            
         } catch (Exception e) {
             System.out.println("An error occured: " + e);
         }
