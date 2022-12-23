@@ -36,5 +36,5 @@ public class EirVidRental {
         //Method to call login here
         Login callLogin = new Login();
         callLogin.checkLogin();
-    }
+}
 }

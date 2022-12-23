@@ -60,8 +60,9 @@ public class MainMenu {
                         break;
                     case "3":
                         //Option 3 Rent a movie
-                        //Access the renting menu 
-
+                        //Access the renting menu - DONE
+                        RentMovie rm = new RentMovie();
+                        rm.rent(user);                        
                         //Brings the vertical menu
                         menuVertical.Menu();
                         break;
